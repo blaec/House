@@ -7,6 +7,7 @@ namespace House
 {
     abstract class Location
     {
+        public const string NEW_LINE = "\r\n";
 
         public string Name { get; private set; }
 
@@ -14,7 +15,7 @@ namespace House
         {
             get { 
                 var exits = string.Join(", ", Exits.Select(e => e.Name).ToArray());
-                return $"You're standing in the {Name}. You see exists to the following places: {exits}.";
+                return $"You're standing in the {Name}.{NEW_LINE}You see exists to the following places: {exits}.";
             }
         }
 

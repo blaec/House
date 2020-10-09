@@ -17,7 +17,7 @@ namespace House
         {
             get
             {
-                return $"{base.Description} You see {decoration}.";
+                return $"{base.Description}{NEW_LINE}You see {decoration}.";
             }
         }
     }

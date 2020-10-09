@@ -33,7 +33,7 @@ namespace House
         {
             livingRoom = new RoomWithDoor("Living Room", "an antique carpet", "an oak door with a brass knob");
             diningRoom = new Room("Dining Room", "a chystal chandelier");
-            kitchen = new RoomWithDoor("Kitchen", "stainless stell appliences", "a screen door");
+            kitchen = new RoomWithDoor("Kitchen", "stainless steel appliences", "a screen door");
 
             frontYard = new OutsideWithDoor("Front Yard", false, "an oak door with a brass knob");
             backYard = new OutsideWithDoor("Back Yard", true, "a screen door");

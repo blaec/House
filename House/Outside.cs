@@ -17,7 +17,7 @@ namespace House
         public override string Description
         {
             get{
-                return $"{base.Description}{(hot ? " It's very hot." : "")}";
+                return $"{base.Description}{(hot ? $"{NEW_LINE}It's very hot." : "")}";
             }
         }
     }
