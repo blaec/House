@@ -4,9 +4,10 @@ using System.Text;
 
 namespace House
 {
-    class RoomWithDoor : Room, IHasExteriorDoor
+    class RoomWithDoor : RoomWithHidingPlace, IHasExteriorDoor
     {
-        public RoomWithDoor(string name, string decoration, string doorDescription) : base(name, decoration)
+        public RoomWithDoor(string name, string decoration, string hidingPlaceName, string doorDescription) 
+            : base(name, decoration, hidingPlaceName)
         {
             DoorDescription = doorDescription;
         }

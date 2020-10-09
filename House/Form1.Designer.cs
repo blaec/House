@@ -32,6 +32,8 @@
             this.goHere = new System.Windows.Forms.Button();
             this.exits = new System.Windows.Forms.ComboBox();
             this.goThroughTheDoor = new System.Windows.Forms.Button();
+            this.check = new System.Windows.Forms.Button();
+            this.hide = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // description
@@ -44,9 +46,9 @@
             // 
             // goHere
             // 
-            this.goHere.Location = new System.Drawing.Point(13, 225);
+            this.goHere.Location = new System.Drawing.Point(13, 224);
             this.goHere.Name = "goHere";
-            this.goHere.Size = new System.Drawing.Size(75, 23);
+            this.goHere.Size = new System.Drawing.Size(75, 25);
             this.goHere.TabIndex = 1;
             this.goHere.Text = "Go here:";
             this.goHere.UseVisualStyleBackColor = true;
@@ -56,9 +58,9 @@
             // 
             this.exits.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.exits.FormattingEnabled = true;
-            this.exits.Location = new System.Drawing.Point(95, 225);
+            this.exits.Location = new System.Drawing.Point(94, 225);
             this.exits.Name = "exits";
-            this.exits.Size = new System.Drawing.Size(393, 23);
+            this.exits.Size = new System.Drawing.Size(394, 23);
             this.exits.TabIndex = 2;
             // 
             // goThroughTheDoor
@@ -71,11 +73,33 @@
             this.goThroughTheDoor.UseVisualStyleBackColor = true;
             this.goThroughTheDoor.Click += new System.EventHandler(this.goThroughTheDoor_Click);
             // 
+            // check
+            // 
+            this.check.Location = new System.Drawing.Point(13, 284);
+            this.check.Name = "check";
+            this.check.Size = new System.Drawing.Size(475, 25);
+            this.check.TabIndex = 4;
+            this.check.Text = "Check";
+            this.check.UseVisualStyleBackColor = true;
+            this.check.Click += new System.EventHandler(this.check_Click);
+            // 
+            // hide
+            // 
+            this.hide.Location = new System.Drawing.Point(12, 315);
+            this.hide.Name = "hide";
+            this.hide.Size = new System.Drawing.Size(476, 25);
+            this.hide.TabIndex = 5;
+            this.hide.Text = "HIde";
+            this.hide.UseVisualStyleBackColor = true;
+            this.hide.Click += new System.EventHandler(this.hide_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(503, 292);
+            this.ClientSize = new System.Drawing.Size(503, 350);
+            this.Controls.Add(this.hide);
+            this.Controls.Add(this.check);
             this.Controls.Add(this.goThroughTheDoor);
             this.Controls.Add(this.exits);
             this.Controls.Add(this.goHere);
@@ -95,6 +119,8 @@
         private System.Windows.Forms.Button goHere;
         private System.Windows.Forms.ComboBox exits;
         private System.Windows.Forms.Button goThroughTheDoor;
+        private System.Windows.Forms.Button check;
+        private System.Windows.Forms.Button hide;
     }
 }
 
